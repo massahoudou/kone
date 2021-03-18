@@ -27,8 +27,6 @@ security:
                 path: logout
                 target: /
 
-    
-            
             # logout:
             #     path: app_logout
             # guard:

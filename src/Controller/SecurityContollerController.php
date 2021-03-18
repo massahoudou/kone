@@ -60,14 +60,5 @@ class SecurityContollerController extends AbstractController
     public function logout()
     {}
 
-    /**
-     *  @Route("/home", name="home")
-     */
-    public function home()
-    {
-        return $this->render('admin/index.html.twig',[
-            'controller_name' => 'Home',
-        ]);
-    }
     
 }
