@@ -40,13 +40,13 @@
 					<div
 						class="form-group">
 						{# <label for="email">Identifiant:</label> #}
-						<input type="text" {{ last_username }} class=" _input" placeholder="" name="username" id="inputIdentifiant" required >
+						<input type="text" {{ last_username }} class=" _input" placeholder="   " name="username" id="inputIdentifiant" required >
 						<label for="" class="_label">Identifiant</label>
 					</div>
 					<div
 						class="form-group">
 						{# <label for="pwd">Mot de passe:</label> #}
-						<input type="password" class=" _input" placeholder="" id="inputPassword" name="password" class="form-control" required>
+						<input type="password" class=" _input" placeholder="  " id="inputPassword" name="password" class="form-control" required>
 						<label for="" class="_label">Mot de passe</label>
 					</div>
 					<input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}">
