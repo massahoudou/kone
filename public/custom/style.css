@@ -1,9 +1,7 @@
-
 ._bg
 {
     background-image: url("images/bg1.jpg");
     height: 100vh;
-    overflow: hidden;
     background-size: cover;
     background-position: center;
 }
@@ -15,7 +13,6 @@
     position: absolute;
     background-color: #F7F7F7;
     right: 0;
-    overflow: hidden;
 }
 ._loginfromspace ._login 
 {
