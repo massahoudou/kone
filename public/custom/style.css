@@ -81,6 +81,17 @@
     animation-name: animation2;
     animation-duration: 0.5s;
 }
+ ._input:not(:placeholder-shown)._input:not(:focus) + ._label
+ {
+     font-size: 15px;
+     top: -90px;
+     left: .8rem;
+     color: darkslategrey;
+     font-weight: 300;
+     z-index: 10;
+     animation-name: animation2;
+     animation-duration: 0.5s;
+ }
 ._loginfromspace ._login button:hover
 {
     background-color: #192b12 !important;
@@ -88,6 +99,7 @@
     animation-name: animation1  ;
     animation-duration: 1s;
 }
+
 @keyframes animation1
 {
     from{

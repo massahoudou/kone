@@ -28,10 +28,13 @@
 					{% endif %}
 
 					{% if app.user %}
-						<div class="mb-3">
-							Connecter en tant que
-							{{ app.user.username }},
-							<a href="{{ path('logout') }}">Déconnection</a>
+						<div class="mb-3 text-center text-muted">
+							<small>
+								Connecter en tant que
+								{{ app.user.username }},
+								<a href=" nav-link  btn-sm  {{ path('logout') }}">Déconnection</a>
+							</small>
+
 						</div>
 					{% endif %}
 					<div
@@ -71,146 +74,5 @@
 				</form>
 			</div>
 		</div>
-
-
-	</div>
-
-	<nav class="">
-		<div class="wrapper">
-			<div class="logo">
-				<a href="#">LOGO</a>
-			</div>
-
-			<ul class="nav-links">
-				<li>
-					<a href="">
-
-						cartographie
-					</a>
-					<div class="mega-box">
-						<div class="content">
-							<ul class="mega-links">
-								<li>
-									<a href="">
-
-										Cartographie des
-									</a>
-								</li>
-							</ul>
-
-							<ul class="mega-links">
-								<li>
-									<a href="">Cartographie des fiches</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</li>
-				<li>
-					<a href="">documentation</a>
-					<div class="mega-box">
-						<div class="content">
-							<ul class="mega-links">
-								<li>
-									<a href="">Données</a>
-								</li>
-							</ul>
-
-							<ul class="mega-links">
-								<li>
-									<a href="">Actuelité</a>
-								</li>
-							</ul>
-							<ul class="mega-links">
-								<li>
-									<a href="">Reunions</a>
-								</li>
-							</ul>
-							<ul class="mega-links">
-								<li>
-									<a href="">Ateliers</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</li>
-				<li>
-					<a href="">Etats & Rpapport
-					</a>
-					<div class="mega-box">
-						<div class="content">
-							<ul class="mega-links">
-								<li>
-									<a href="">Repertoire des indicateurs</a>
-								</li>
-							</ul>
-
-							<ul class="mega-links">
-								<li>
-									<a href="">Actuelité</a>
-								</li>
-							</ul>
-							<ul class="mega-links">
-								<li>
-									<a href="">Reunions</a>
-								</li>
-							</ul>
-							<ul class="mega-links">
-								<li>
-									<a href="">Ateliers</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</li>
-				<li>
-					<a href="">Suivi des résultats</a>
-					<div class="mega-box">
-						<div class="content">
-							<ul class="mega-links">
-								<li>
-									<a href="">Suivi des indicateurs</a>
-								</li>
-							</ul>
-
-							<ul class="mega-links">
-								<li>
-									<a href="">Etat par indicateurs</a>
-								</li>
-							</ul>
-							<ul class="mega-links">
-								<li>
-									<a href="">Tableau de bord</a>
-								</li>
-							</ul>
-							<ul class="mega-links">
-								<li>
-									<a href="">Analyse croisée</a>
-								</li>
-							</ul>
-							<ul class="mega-links">
-								<li>
-									<a href=""> Etat PO</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-
-				</li>
-				<li>
-					<a href="">Cardre de résultat</a>
-				</li>
-				<li>
-					<a href="">parametrage</a>
-				</li>
-			</ul>
-		</div>
-	</nav>
-	<div class="jumbotron mt-5">
-		<div class="container">
-
-			<h1 class="">Hello world</h1>
-		</div>
-
 	</div>
 {% endblock %}
