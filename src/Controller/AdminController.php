@@ -7,13 +7,5 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class AdminController extends AbstractController 
 {
-    /**
-     * @Route("/home",name="home")
-     */
-    public function index()
-    {
-        return $this->render('admin/index.html.twig',[
 
-        ]);
-    }
 }

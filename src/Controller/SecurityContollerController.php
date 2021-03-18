@@ -9,6 +9,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
+use Symfony\Component\Security\Core\User\UserInterface;
 use Symfony\Component\Security\Http\Authentication\AuthenticationUtils;
 
 class SecurityContollerController extends AbstractController
@@ -37,7 +38,6 @@ class SecurityContollerController extends AbstractController
             $this->manager->flush();
 
         }
-        $user =
         // if ($this->getUser()) {
         //     return $this->redirectToRoute('target_path');
         // }
@@ -59,5 +59,13 @@ class SecurityContollerController extends AbstractController
      */
     public function logout()
     {}
+
+    /**
+     *  @Route("/home", name="home")
+     */
+    public function home()
+    {
+        return $this->render('admin/index.html.twig');
+    }
     
 }
