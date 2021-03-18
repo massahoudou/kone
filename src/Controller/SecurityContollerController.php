@@ -65,7 +65,9 @@ class SecurityContollerController extends AbstractController
      */
     public function home()
     {
-        return $this->render('admin/index.html.twig');
+        return $this->render('admin/index.html.twig',[
+            'controller_name' => 'Home',
+        ]);
     }
     
 }
