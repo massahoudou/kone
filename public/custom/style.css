@@ -129,17 +129,16 @@
 nav 
 {
     background-color: #437133;
-    position: fixed ;
-    z-index: 999;
+    position: sticky;
+    z-index: 1;
     width: 100%;
     height: 65px;
     line-height: 65px;
     border-bottom: 3px solid  #1d3812;
-    box-shadow: 0 0 10px  0 rgba(0, 0, 0, 0.473);
 }
 nav .wrapper
 {
-    position:  ;
+    position: relative ;
     max-width: 100%;
     padding: 0 30px ;
     margin : auto ;
@@ -177,23 +176,7 @@ nav .wrapper .logo a
     border-radius: 2px ;
     transition:  all 0.3s ease;
 }
-.drop-menu
-{
-    background-color: #27421D;
-    width: 190px;
-    top:85px ;
-    line-height:  45px ;
-    position: absolute;
-    opacity: 0;
-    visibility: hidden;
-}
-.drop-menu li a 
-{
-    width: 100%;
-    display: block ;
-    padding:  0 0  0 15px ;
-    font-weight: 400 ;
-}
+
 .nav-links li:hover  .mega-box ,.nav-links li:hover  .content
 {
     top: 65px;
