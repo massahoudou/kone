@@ -1,0 +1,236 @@
+*{
+    margin:0;
+    padding: 0;
+}
+._bg
+{
+    background-image: url("images/bg1.jpg");
+    height: 100vh;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+}
+
+._loginfromspace
+{
+    height: 100vh;
+    font-size: 20px ;
+    position: absolute;
+    background-color: #F7F7F7;
+    right: 0;
+    overflow: hidden;
+}
+._loginfromspace ._login 
+{
+    position: relative;
+    top: 0;
+}
+._loginfromspace ._login label
+{
+    color: rgb(169, 169, 169);
+}
+._loginfromspace ._login div  ._input
+{
+    background: none;
+    margin: 10px 0 10px 0 ;
+    border: 1px solid rgba(116, 116, 116, 0.322)  !important;
+    border-radius: 8px  !important;
+    font-weight: 200;
+    outline: none;
+    padding: 1rem;
+    width: 100%;
+    font-size: 20px;
+    z-index: 1;
+}
+._loginfromspace ._login div ._label
+{
+    position: relative;
+    top:   -55px;
+    left: 1rem;
+    padding: 0 15px ;
+    background-color: #F7F7F7;
+    cursor: pointer;
+    transition: .3s;
+}
+
+._loginfromspace ._login button
+{
+    width: 100%;
+    color: white;
+    border-radius: 8px  !important;
+    font-size: 13px;
+    font-weight: bolder;
+    background-color: #27421D !important;
+    padding: 10px 15px  10px 15px   !important;
+    cursor: pointer;
+}
+._loginfromspace ._login div  ._input:focus
+{
+    border: 1px solid rgb(70, 91, 67) !important;
+    transition: .3s
+}
+._loginfromspace ._login div  ._input:focus + ._label
+
+{
+    font-size: 15px;
+    top: -90px;
+    left: .8rem;
+    color: darkslategrey;
+    font-weight: 300;
+    z-index: 10;
+    animation-name: animation2;
+    animation-duration: 0.5s;
+}
+._loginfromspace ._login button:hover
+{
+    background-color: #192b12 !important;
+    box-shadow: 0 10px 36px rgba(0,0,0, .15);
+    animation-name: animation1  ;
+    animation-duration: 1s;
+}
+@keyframes animation1
+{
+    from{
+        border-radius: 10px  !important;
+    }
+    to {
+        background-color: #192b12 !important;
+        border-radius: 0px  !important;
+    }
+
+}
+._loginfromspace ._text
+{
+    font-size: 35px ;
+    font-weight: 400;
+    width: 80%  !important;
+    color: rgb(44, 112, 35);
+    text-align: center;
+    position: relative;
+    margin-top: 5%;
+
+}
+._loginfromspace ._check ,._loginfromspace ._mdp
+{
+    font-size: 15px ;
+    font-weight: 300;
+}
+._loginfromspace ._mdp
+{
+    text-align: right;
+}
+._loginfromspace ._icon
+{
+    font-size: 50px;
+    color: rgba(116, 116, 116, 0.432);
+
+}
+/* ,-navbar */
+nav 
+{
+    background-color: #437133;
+    position: fixed ;
+    z-index: 999;
+    width: 100%;
+    height: 65px;
+    line-height: 65px;
+    border-bottom: 3px solid  #1d3812;
+    box-shadow: 0 0 10px  0 rgba(0, 0, 0, 0.473);
+}
+nav .wrapper
+{
+    position:  ;
+    max-width: 100%;
+    padding: 0 30px ;
+    margin : auto ;
+    display: flex ;
+    align-items: center;
+    justify-content: space-between;
+}
+.wrapper .nav-links
+{
+    display: inline-flex;
+}
+nav .wrapper .logo a 
+{
+    color: #fff;
+    font-size: 27px;
+    font-weight: 600;
+    text-decoration:  none ;
+}   
+.nav-links li {
+    list-style: none  ;
+    
+}
+.nav-links li a 
+{   
+    color: #fff;
+    text-decoration: none; 
+    font-size: 14px;
+    font-weight: 600;
+    padding: 9px 15px;
+    text-transform: capitalize  ;
+   
+}
+.nav-links li a:hover
+{
+    border-radius: 2px ;
+    transition:  all 0.3s ease;
+}
+.drop-menu
+{
+    background-color: #27421D;
+    width: 190px;
+    top:85px ;
+    line-height:  45px ;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+}
+.drop-menu li a 
+{
+    width: 100%;
+    display: block ;
+    padding:  0 0  0 15px ;
+    font-weight: 400 ;
+}
+.nav-links li:hover  .mega-box ,.nav-links li:hover  .content
+{
+    top: 65px;
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3s ease;
+}
+.mega-box
+{
+    position: absolute;
+    top: 65px  ;
+    width: 100%;
+    left: 0;
+    opacity: 1;
+    visibility: hidden
+}
+.mega-box .content
+{
+    background-color:  #27421D;
+    padding: ;
+    opacity: 0;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.mega-box .content .mega-links
+{
+    padding: 10px;
+}
+.mega-box .content .mega-links li   a
+{
+    font-size: 16px ;
+    font-weight: bold;
+}
+.mega-box .content .mega-links li:hover
+{
+    background-color: #365e28;
+    border-radius:2px ;
+    transition: all 0.3s ease;
+}
