@@ -1,0 +1,168 @@
+{% extends 'admin.html.twig' %}
+
+{% block title %}Hello ChartjsController!{% endblock %}
+
+{% block body %}
+
+    <div class="container-fluid mt-3">
+        <div class="d-flex flex-wrap justify-content-around ">
+            <div class="col-md-6 p-2  ">
+                <div class="card shadow-sm">
+
+                    <div class="card-body m-0 p-2 ">
+                        <div class="banner-text ">
+                            <span class="gras"> OSP1.2.1</span> : Linéaire d'autoroute construites par an (Km)<br>
+                            Periode Concernée : 2024br <br>
+                            source de données : <span class="gras text-decoration-underline">Ageroute</span>
+                        </div>
+                        {{ render_chart(chart) }}
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-6 p-2 ">
+                <div class="card shadow-sm border-0">
+
+                    <div class="card-body m-0 p-2">
+                        <div class="banner-titre">
+                            Indicateur
+                        </div>
+                       <table class="banner-table">
+                           <tr>
+                               <th>Code</th>
+                               <th>intitulé</th>
+                               <th>Unité</th>
+                               <th>Valeur cible</th>
+                               <th>Valeur mesurée </th>
+                               <th>Taux</th>
+
+                           </tr>
+
+                           <tr class="">
+                               <td>OSp1.1.1</td>
+                               <td>Linéaire de Routes Revêtues construit par an (Km)</td>
+                               <td> 	(%)</td>
+                               <td> 8 0000</td>
+                               <td> 7 085 </td>
+                               <td> 7 085 </td>
+                           </tr>
+                           <tr>
+                               <td>OSp1.1.1</td>
+                               <td>Linéaire de Routes Revêtues construit par an (Km)</td>
+                               <td> 	(%)</td>
+                               <td> 8 0000</td>
+                               <td> 7 085 </td>
+                               <td> 7 085 </td>
+                           </tr>
+                           <tr>
+                               <td>OSp1.1.1</td>
+                               <td>Linéaire de Routes Revêtues construit par an (Km)</td>
+                               <td> 	(%)</td>
+                               <td> 8 0000</td>
+                               <td> 7 085 </td>
+                               <td> 7 085 </td>
+                           </tr>
+                           <tr>
+                               <td>OSp1.1.1</td>
+                               <td>Linéaire de Routes Revêtues construit par an (Km)</td>
+                               <td> 	(%)</td>
+                               <td> 8 0000</td>
+                               <td> 7 085 </td>
+                               <td> 7 085 </td>
+                           </tr>
+                           <tr>
+                               <td>OSp1.1.1</td>
+                               <td>Linéaire de Routes Revêtues construit par an (Km)</td>
+                               <td> 	(%)</td>
+                               <td> 8 0000</td>
+                               <td> 7 085 </td>
+                               <td> 7 085 </td>
+                           </tr>
+                       </table>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="container-fluid mt-5">
+        <div class="d-flex flex-wrap justify-content-around ">
+            <div class="col-md-4 ">
+                <div class=" shadow-sm ">
+                    <div class="card-body">
+                        <div class="banner-titre m-0 p-0">
+                           <span class=""> <i class="fa fa-bars"></i> </span>
+                            Financement
+                        </div>
+
+                        {{ render_chart(chart2) }}
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 ">
+                <div class="shadow-sm">
+                    <div class="card-body">
+                        <div class="banner-titre">
+                            <span class=""> <i class="fa fa-bars"></i> </span>
+                            Execution des PO
+
+                        </div>
+                        {{ render_chart(chart2) }}
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 ">
+                <div class=" shadow-sm">
+                    <div class="card-body">
+                        <div class="banner-titre">
+                            <span class=""> <i class="fa fa-bars"></i> </span>
+                            Décaisemment Par parametre
+                        </div>
+                        {{ render_chart(chart3) }}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="container-fluid mt-5">
+        <div class="d-flex flex-wrap justify-content-around ">
+            <div class="col-md-4 ">
+                <div class=" shadow-sm ">
+                    <div class="card-body">
+                        <div class="banner-titre m-0 p-0">
+                            <span class=""> <i class="fa fa-bars"></i> </span>
+                            Financement
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 ">
+                <div class="shadow-sm">
+                    <div class="card-body">
+                        <div class="banner-titre">
+                            <span class=""> <i class="fa fa-bars"></i> </span>
+                            Execution des PO
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 ">
+                <div class=" shadow-sm">
+                    <div class="card-body">
+                        <div class="banner-titre">
+                            <span class=""> <i class="fa fa-bars"></i> </span>
+                            Décaisemment Par parametre
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+{% endblock %}

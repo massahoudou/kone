@@ -9,13 +9,200 @@
         {# Run `composer require symfony/webpack-encore-bundle`
            and uncomment the following Encore helpers to start using Symfony UX #}
         {% block stylesheets %}
-            {#{{ encore_entry_link_tags('app') }}#}
+            {{ encore_entry_link_tags('app') }}
         {% endblock %}
         {% block javascripts %}
-            {#{{ encore_entry_script_tags('app') }}#}
+            {{ encore_entry_script_tags('app') }}
         {% endblock %}
     </head>
     <body>
+    <nav class="">
+        <div class="wrapper">
+            <div class="logo">
+                <a href="#">LOGO</a>
+            </div>
+
+            <ul class="nav-links">
+                <li>
+                    <a href="">
+
+                        cartographie
+                    </a>
+                    <div class="mega-box">
+                        <div class="content">
+                            <ul class="mega-links">
+                                <li>
+                                    <a href="">
+
+                                        Cartographie des
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <ul class="mega-links">
+                                <li>
+                                    <a href="">Cartographie des fiches</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="">documentation</a>
+                    <div class="mega-box">
+                        <div class="content">
+                            <ul class="mega-links">
+                                <li>
+                                    <a href="">Données</a>
+                                </li>
+                            </ul>
+
+                            <ul class="mega-links">
+                                <li>
+                                    <a href="">Actuelité</a>
+                                </li>
+                            </ul>
+                            <ul class="mega-links">
+                                <li>
+                                    <a href="">Reunions</a>
+                                </li>
+                            </ul>
+                            <ul class="mega-links">
+                                <li>
+                                    <a href="">Ateliers</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="">Etats & Rpapport
+                    </a>
+                    <div class="mega-box">
+                        <div class="content">
+                            <ul class="mega-links">
+                                <li>
+                                    <a href="">Repertoire des indicateurs</a>
+                                </li>
+                            </ul>
+
+                            <ul class="mega-links">
+                                <li>
+                                    <a href="">Actuelité</a>
+                                </li>
+                            </ul>
+                            <ul class="mega-links">
+                                <li>
+                                    <a href="">Reunions</a>
+                                </li>
+                            </ul>
+                            <ul class="mega-links">
+                                <li>
+                                    <a href="">Ateliers</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="">Suivi des résultats</a>
+                    <div class="mega-box">
+                        <div class="content">
+                            <ul class="mega-links">
+                                <li>
+                                    <a href="">Suivi des indicateurs</a>
+                                </li>
+                            </ul>
+
+                            <ul class="mega-links">
+                                <li>
+                                    <a href="">Etat par indicateurs</a>
+                                </li>
+                            </ul>
+                            <ul class="mega-links">
+                                <li>
+                                    <a href="">Tableau de bord</a>
+                                </li>
+                            </ul>
+                            <ul class="mega-links">
+                                <li>
+                                    <a href="">Analyse croisée</a>
+                                </li>
+                            </ul>
+                            <ul class="mega-links">
+                                <li>
+                                    <a href=""> Etat PO</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="">Cardre de résultat</a>
+                </li>
+                <li>
+                    <a href="">parametrage</a>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+    <header>
+        <div class="submenu">
+            <div class="">
+
+            </div>
+            <ul class="sub-links">
+                <li>
+                    <a href="">
+                         <span>
+                            <i class="fa fa-database"></i>
+                        </span>
+                        Programme
+                        <span>
+                            <i class="fa fa-caret-down"></i>
+                        </span>
+                    </a>
+                </li>
+                <li>
+
+
+                    <a href="">
+                        <span>
+                            <i class="fa fa-users"></i>
+                        </span>
+                        Connecté
+                        <span>
+                            <i class="fa fa-caret-down"></i>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span>
+                            <i class="fa fa-bell"></i>
+                        </span>
+                        Notification
+                        <span>
+                            <i class="fa fa-user-lock"></i>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                          <span>
+                            <i class="fa fa-user-lock"></i>
+                        </span>
+                        Admin Ageroute
+                        <span>
+                            <i class="fa fa-caret-down"></i>
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
 
         {% block body %}
 
